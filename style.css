@@ -1,8 +1,8 @@
 :root {
   background-color: rgb(87, 83, 83);
-  --clr-accent-500: hsl(0, 96%, 46%);
-  --clr-accent-400: hsl(0, 96%, 46%);
-  --clr-accent-300: hsl(12, 88%, 75%);
+  --clr-accent-500: hsl(0, 0%, 0%);
+  --clr-accent-400: hsl(0, 0%, 0%);
+  --clr-accent-300: hsl(0, 96%, 46%);
   --clr-accent-100: hsl(13, 100%, 96%);
 
   --clr-primary-400: hsl(0, 0%, 100%);
@@ -139,22 +139,34 @@ p[data-width="wide"] {
   max-width: 42ch;
 }
 
-.title {
-  border-bottom: 8px solid hsl(0, 96%, 46%);
+
+.intro {
+  margin-top: 20px;
+  background-size: contain;
+  background-position: left center;
+  background-image: linear-gradient(74deg,rgba(0,51,255,0) 46%,hsl(0, 96%, 46%) 46%),url(images/Carly.png)!important;
 }
 
-.profile {
-  border-radius: 20px;
-  display: inline-flex;
-  cursor: pointer;
-  text-decoration: none;
-  color: var(--clr-neutral-100);
-  background-color: var(--clr-accent-400);
-  box-shadow: 0 1em 2em -0em var(--clr-accent-500);
+.introbtn {
+  background: black;
 }
 
 .welcome {
-  color: rgb(175, 175, 175);
+  position: relative;
+}
+
+.flow {
+  text-align: center;
+}
+
+.logo {
+  width: 60%;
+}
+
+.logo2 {
+  margin-right: auto;
+  margin-left: auto;
+  width: 30%;
 }
 
 /* button */
@@ -197,7 +209,7 @@ p[data-width="wide"] {
 /* navigation */
 
 .primary-header {
-  padding-top: var(--size-700);
+  padding-top: var(--size-500);
 }
 
 .nav-wrapper {
@@ -456,7 +468,7 @@ input:where([type="text"], [type="email"], ) {
   align-items: center;
   color: var(--clr-neutral-100);
   font-weight: var(--fw-bold);
-  background-color: var(--clr-accent-400);
+  background-color: var(--clr-accent-300);
   padding: 0 var(--size-500);
   border-radius: 100vw;
   grid-row: 1 / 2;
