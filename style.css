@@ -341,6 +341,13 @@ input:where([type="text"], [type="email"], ) {
   .primary-footer-wrapper > * {
     margin-inline: auto;
   }
+  .numbered-items__title {
+    color: rgb(175, 175, 175);
+  }
+
+  body {
+    overflow-x: hidden;
+  }
 }
 
 /* footer navigation */
