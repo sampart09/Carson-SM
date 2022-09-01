@@ -3,11 +3,11 @@
   --clr-accent-500: hsl(0, 0%, 0%);
   --clr-accent-400: hsl(0, 0%, 0%);
   --clr-accent-300: hsl(0, 96%, 46%);
-  --clr-accent-100: hsl(13, 100%, 96%);
+  --clr-accent-100: hsl(0, 0%, 39%);
 
   --clr-primary-400: hsl(0, 0%, 100%);
 
-  --clr-neutral-900: hsl(232, 12%, 13%);
+  --clr-neutral-900: hsl(0, 0%, 0%);
   --clr-neutral-200: hsl(0 0% 97%);
   --clr-neutral-100: hsl(0 0% 100%);
 
@@ -142,10 +142,24 @@ p[data-width="wide"] {
 
 .intro {
   margin-top: 20px;
-  background-size: contain;
-  background-position: left center;
-  background-image: linear-gradient(74deg,rgba(0,51,255,0) 46%,hsl(0, 96%, 46%) 46%),url(images/Carly.png)!important;
+  background-size:auto;
+  background-position: left;
+  background-image: linear-gradient(62deg,rgba(0,51,255,0) 46%,hsl(0, 96%, 46%) 44%),url(images/Carly.png)!important;
 }
+
+.intro2 {
+  padding-top: 40px;
+  background-size: contain;
+  background-position:right;
+  background-image: linear-gradient(62deg, black 52%, transparent 44%),url(images/carly2.png) !important;
+  z-index: 101;
+  margin-bottom: -20px;
+}
+
+.smb {
+  text-align: left;
+}
+
 
 .introbtn {
   background: black;
@@ -169,6 +183,47 @@ p[data-width="wide"] {
   width: 30%;
 }
 
+.pictures {
+  margin-right: auto;
+  margin-left: auto;
+  width: 55%;
+}
+
+.heading2 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.maptitle {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40%;
+  min-width: 250px;
+  padding:10px 10px;
+  border-style: solid;
+  border-radius: 50px;
+  border-color: black;
+  z-index: 101;
+  position: relative;
+  box-shadow: 0 1.125em 1em -1em var( --clr-accent-300);
+}
+
+#map {
+  height: 500px;
+  width: 100%;
+  margin-top: -70px;
+
+}
+
+#review {
+  padding-top: 20px;
+  margin-bottom: -20px;
+}
+
 /* button */
 
 .button {
@@ -178,6 +233,21 @@ p[data-width="wide"] {
   border: 0;
   border-radius: 100vmax;
   padding: 1.25em 2.5em;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-button);
+  line-height: 1;
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-accent-400);
+  box-shadow: 0 1.125em 1em -1em var(--clr-accent-500);
+}
+
+.es-header-follow-button{
+  display: inline-flex;
+  cursor: pointer;
+  text-decoration: none;
+  border: 0;
+  border-radius: 100vmax;
+  padding: 0.75em 2.5em;
   font-weight: var(--fw-bold);
   font-size: var(--fs-button);
   line-height: 1;
@@ -197,7 +267,7 @@ p[data-width="wide"] {
 
 .button:hover,
 .button:focus-visible {
-  background-color: var(--clr-accent-300);
+  background-color: var(--clr-accent-100);
 }
 
 .button[data-type="inverted"]:hover,
@@ -214,8 +284,9 @@ p[data-width="wide"] {
 
 .nav-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between ;
   align-items: center;
+
 }
 
 .mobile-nav-toggle {
@@ -245,13 +316,13 @@ p[data-width="wide"] {
 @media (max-width: 50em) {
   .primary-navigation {
     display: none;
-
+    z-index: 100;
     position: fixed;
     padding: var(--size-700);
     inset: 7rem var(--size-400) auto;
     max-width: 25rem;
     margin-left: auto;
-    background: var(--clr-neutral-100);
+    background: var(--clr-accent-400);
     border-radius: var(--size-100);
     box-shadow: 0 0 0.75em rgb(0, 0, 0, 0.05);
   }
@@ -354,7 +425,7 @@ input:where([type="text"], [type="email"], ) {
     margin-inline: auto;
   }
   .numbered-items__title {
-    color: rgb(175, 175, 175);
+    color: rgb(255, 255, 255);
   }
 
   body {
@@ -426,7 +497,6 @@ input:where([type="text"], [type="email"], ) {
 .numbered-items {
   counter-reset: count;
   width: fit-content;
-  margin-inline: auto;
 }
 
 .numbered-items li {
@@ -445,6 +515,7 @@ input:where([type="text"], [type="email"], ) {
   grid-row: 1 / 2;
   grid-column: 2 / 4;
   line-height: 1;
+  text-align: left;
 }
 
 .numbered-items__body {
@@ -706,6 +777,9 @@ input:where([type="text"], [type="email"], ) {
 }
 .padding-block-700 {
   padding-block: var(--size-700);
+}
+.padding-block-500 {
+  padding-block: var(--size-500);
 }
 
 .margin-bottom-700 {
