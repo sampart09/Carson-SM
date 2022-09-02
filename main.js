@@ -22,6 +22,3 @@ const slider = new A11YSlider(document.querySelector(".slider"), {
   },
 });
 
-window.onload = function () {
-  document.body.intro += "loaded";
-}
