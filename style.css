@@ -538,6 +538,7 @@ p[data-width="wide"] {
 
   .introbtn {
     font-size: 0.8em;
+    transform: translateY(20px);
   }
 
   .intro {
