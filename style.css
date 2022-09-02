@@ -148,7 +148,7 @@ svg {
       transform: translateX(150px);
   }
   to {
-    transform: translateX(-37px);
+    transform: translateX(-33px);
   }
 }
 
@@ -502,7 +502,7 @@ p[data-width="wide"] {
     background-image: linear-gradient(90deg,rgba(0,51,255,0) 46%,hsl(0, 96%, 46%) 44%)!important;
     animation: slidein2 1.5s;
     width: 110%;
-    transform: translateX(-37px);
+    transform: translateX(-33px);
   }
 
   .intro2 {
