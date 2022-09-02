@@ -49,7 +49,7 @@
   :root {
     --fs-body: var(--fs-500);
     --fs-primary-heading: var(--fs-900);
-    --fs-secondary-heading: var(--fs-800);
+    --fs-secondary-heading: var(--fs-700);
 
     --fs-nav: var(--fs-300);
   }
@@ -124,6 +124,43 @@ svg {
 
 /* general styling */
 
+
+@keyframes slidein {
+  from {
+      margin-right: -60%;
+  }
+  to {
+      margin-right: 0%;
+  }
+}
+
+@keyframes transitionin {
+  from {
+      margin-left: -60%;
+  }
+  to {
+      margin-left: 0%;
+  }
+}
+
+@keyframes slidein2 {
+  from {
+      transform: translateX(150px);
+  }
+  to {
+    transform: translateX(-43px);
+  }
+}
+
+@keyframes transitionin2 {
+  from {
+    margin-left: -60%;
+}
+to {
+    margin-left: 0%;
+}
+}
+
 body {
   font-size: var(--fs-body);
   font-family: var(--ff-body);
@@ -139,21 +176,43 @@ p[data-width="wide"] {
   max-width: 42ch;
 }
 
-
-.intro {
+.introbackground {
   margin-top: 20px;
-  background-size:auto;
+  height: 100%;
+  background-image: url(images/Carly.png);
   background-position: left;
-  background-image: linear-gradient(62deg,rgba(0,51,255,0) 46%,hsl(0, 96%, 46%) 44%),url(images/Carly.png)!important;
+  
 }
 
+.intro {
+  animation: slidein 1.2s;
+  height: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem ;
+  margin-top: -1.5rem;
+  margin-bottom: -1.5rem;
+  background-size:auto;
+  background-position: left;
+  background-image: linear-gradient(62deg,rgba(0,51,255,0) 46%,hsl(0, 96%, 46%) 44%)!important;
+}
+
+.introbackground2 {
+  background-image: url(images/carly3bw.png);
+  background-position: right;
+  height: 100%;
+}
+
+
 .intro2 {
-  padding-top: 40px;
+  animation: transitionin 1.2s;
+  height: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem ;
+  margin-top: -1.5rem;
+  margin-bottom: -1.5rem;
   background-size: contain;
   background-position:right;
-  background-image: linear-gradient(62deg, black 52%, transparent 44%),url(images/carly2.png) !important;
-  z-index: 101;
-  margin-bottom: -20px;
+  background-image: linear-gradient(62deg, black 52%, rgba(0,51,255,0) 44%)!important;
 }
 
 .smb {
@@ -384,6 +443,7 @@ p[data-width="wide"] {
     background: transparent;
     border: 0;
     padding: 0.5em;
+    z-index: 101;
   }
 
   .mobile-nav-toggle .icon-close {
@@ -414,16 +474,14 @@ p[data-width="wide"] {
 
 @media (max-width: 426px ) {
 
-  .intro {
-    height: 200px ;
-    margin-top: 20px;
-    background-size:auto;
-    background-position: left;
-    background-image: linear-gradient(62deg,rgba(0,51,255,0) 46%,hsl(0, 96%, 46%) 44%),url(images/Carlyphone.png)!important;
+  .introbackground {
+    background-image: url(images/Carlyphone.png);
+    overflow-x: hidden;
+
   }
   .welcome {
-    font-size: 10px;
-    width: 170px;
+    font-size: 0.76em;
+    width: 200px;
     margin-right: 0;
     margin-left: auto;
   }
@@ -433,11 +491,22 @@ p[data-width="wide"] {
   }
 
   .cintro {
-    transform: translateY(-110px);
+    transform: translateY(-40px);
   }
 
   .introbtn {
     font-size: 0.8em;
+  }
+
+  .intro {
+    background-image: linear-gradient(90deg,rgba(0,51,255,0) 46%,hsl(0, 96%, 46%) 44%)!important;
+    animation: slidein2 1.5s;
+    width: 110%;
+    transform: translateX(-43px);
+  }
+
+  .intro2 {
+
   }
 
 }
