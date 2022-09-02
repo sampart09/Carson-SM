@@ -225,6 +225,7 @@ p[data-width="wide"] {
   background: black;
 }
 
+
 .welcome {
   position: relative;
 }
@@ -309,6 +310,10 @@ p[data-width="wide"] {
   color: #fff;
 }
 
+.fa-brands:hover {
+  color: black;
+}
+
 .line {
   align-content: center;
   border-style: solid;
@@ -384,7 +389,7 @@ p[data-width="wide"] {
 
 .button:hover,
 .button:focus-visible {
-  background-color: var(--clr-accent-100);
+  background-color: grey;
 }
 
 .button[data-type="inverted"]:hover,
@@ -655,7 +660,7 @@ p[data-width="wide"] {
 }
 
 .footer-nav a:is(:hover, :focus) {
-  color: var(--clr-accent-400);
+  color: var(--clr-accent-300);
 }
 
 
@@ -675,7 +680,7 @@ p[data-width="wide"] {
 }
 
 .social-list a:is(:hover, :focus) .social-icon {
-  fill: var(--clr-accent-400);
+  fill: var(--clr-accent-300);
 }
 
 /* cta */
