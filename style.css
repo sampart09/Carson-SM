@@ -1245,7 +1245,7 @@ p[data-width="wide"] {
 
 .s03d-pricing-footer {
   display: block;
-  padding: 20px;
+  padding: 5px;
 }
 
 /* PRICING BUTTON */
@@ -1260,6 +1260,7 @@ p[data-width="wide"] {
   text-decoration: none;
   display: inline-block;
   width: 100%;
+  margin-bottom: 15px;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 2.6;
@@ -1435,6 +1436,113 @@ p[data-width="wide"] {
   margin-right: auto;
 }
 
+.About5 {
+  display: none;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  padding: 40px;
+  max-height: 400px;
+  max-width: 700px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.About5 h1 {
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+
+.About5 .h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  padding-bottom: 10px;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.About6 {
+  display: none;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  padding: 40px;
+  max-height: 400px;
+  max-width: 700px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.About6 h1 {
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+
+.About6 .h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  padding-bottom: 10px;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.About7 {
+  display: none;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  padding: 40px;
+  max-height: 400px;
+  max-width: 700px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.About7 h1 {
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+
+.About7 .h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  padding-bottom: 10px;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .directions {
   padding-left: 20px;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 426px) {
+  .mobile {
+    display: block;
+  }
+
+  .web {
+    display: none;
+  }
 }

@@ -42,6 +42,37 @@ toggleBtnD.addEventListener('click', () => {
       }
 });
 
+const toggleBtnE = document.querySelector('#toggleE');
+const divlistE = document.querySelector('.About5');
 
+toggleBtnE.addEventListener('click', () => {
+    if(divlistE.style.display === 'block') {
+        divlistE.style.display = 'none';
+      } else {
+        divlistE.style.display = 'block';
+      }
+});
+
+const toggleBtnF = document.querySelector('#toggleF');
+const divlistF = document.querySelector('.About6');
+
+toggleBtnF.addEventListener('click', () => {
+    if(divlistF.style.display === 'block') {
+        divlistF.style.display = 'none';
+      } else {
+        divlistF.style.display = 'block';
+      }
+});
+
+const toggleBtnG = document.querySelector('#toggleG');
+const divlistG = document.querySelector('.About7');
+
+toggleBtnG.addEventListener('click', () => {
+    if(divlistG.style.display === 'block') {
+        divlistG.style.display = 'none';
+      } else {
+        divlistG.style.display = 'block';
+      }
+});
 
 
