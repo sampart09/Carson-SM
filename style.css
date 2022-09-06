@@ -1302,7 +1302,6 @@ p[data-width="wide"] {
 #Booking {
   height: 100%;
   padding: 40px 0px;
-  background-color: black;
   text-align: center;
 }
 
@@ -1434,4 +1433,8 @@ p[data-width="wide"] {
   color: black;
   margin-left: auto;
   margin-right: auto;
+}
+
+.directions {
+  padding-left: 20px;
 }
