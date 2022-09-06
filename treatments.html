@@ -150,7 +150,7 @@
         </h1>
       </div>
       <div class="contact">
-        <div class="cnt"><button class="button2">Email: carsonsportsmassage@gmail.com</div>
+        <div class="cnt"><button class="button2" onclick="sendEmail();">Email: carsonsportsmassage@gmail.com</div>
         <div class="cnt"><button class="button2">Telephone: 07718788186</div>
       </div>
     </section>
@@ -179,10 +179,10 @@
                   <use xlink:href="images/social-icons.svg#icon-youtube"></use>
                 </svg>
               </a></li>
-            <li><a aria-label="twitter" href="#">
-                <img src="images/iconmonstr-phone-9.svg" alt="" class="social-icon">
+            <li><a aria-label="twitter" href="#Booking">
+              <i class="social-icon fa-solid fa-square-phone fa-2x"></i>
               </a></li>
-            <li><a aria-label="email" href="#">
+            <li><a aria-label="email" onclick="sendEmail();">
                 <i class="social-icon fa-sharp fa-solid fa-envelope fa-2x"></i>
               </a></li>
             <li><a aria-label="instragram" href="https://www.instagram.com/carsonsportsmassage/">
@@ -209,8 +209,12 @@
       </div>
     </div>
   </footer>
-
-
+  <script>
+    function sendEmail() 
+    {
+      window.location = "mailto:carsonsportsmassage@gmail.com";
+    }
+    </script>
   <script src="/Carson-SM/div.js"></script>
   <script type="module" src="/Carson-SM/main.js"></script>
 </body>
